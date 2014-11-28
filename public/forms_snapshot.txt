@@ -1,0 +1,96 @@
+
+<form action="/account/login" method="POST" target="view" class="login_form">
+<div>
+	<input type=submit value="login" class="button">
+	E-mail Address: <input name="email" value="asa@asahardcastle.com">
+	Password: <input name="password" type="password" value="">
+</div>
+</form>
+
+<h3>Processing Rule</h3>
+
+<form action="/site/rule/create" method="POST" target="view">
+<div>
+<input type="submit" value="add rule" />
+<span style="position:absolute;top:-14px;">domainName</span><input type="text" id="domainName" name="domainName" value="addictinggames.com"/>
+<span style="position:absolute;top:-14px;">snapshotVersion</span><input type="text" id="snapshotVersion" name="snapshotVersion" value="1336998464"/>
+<span style="position:absolute;top:-14px;">policyName</span><input type="text" id="policyName" name="policyName" value="Privacy Policy"/>
+<span style="position:absolute;top:-14px;">matchString</span><input type="text" id="matchString" name="matchString" value="<div id=&quot;footerPageContent&quot;>{.}</div>"/>
+</div>
+</form>
+
+<form action="/site/rule/delete" method="POST" target="view">
+<div>
+<input type="submit" value="delete rule" />
+<span style="position:absolute;top:-14px;">domainName</span><input type="text" id="domainName" name="domainName" value="addictinggames.com"/>
+<span style="position:absolute;top:-14px;">snapshotVersion</span><input type="text" id="snapshotVersion" name="snapshotVersion" value="1336998464"/>
+<span style="position:absolute;top:-14px;">policyName</span><input type="text" id="policyName" name="policyName" value="Privacy Policy"/>
+</div>
+</form>
+
+
+<h3>IGNORE</h3>
+<form action="/site/snapshot/ignore" method="POST" target="view">
+<div>
+<input type="submit" value="ignore" />
+<span style="position:absolute;top:-14px;">domainName</span><input type="text" id="domainName" name="domainName" value="addictinggames.com"/>
+<span style="position:absolute;top:-14px;">policyName</span><input type="text" id="policyName" name="policyName" value="Privacy Policy"/>
+<span style="position:absolute;top:-14px;">snapshotVersion</span><input type="text" id="snapshotVersion" name="snapshotVersion" value="1336998464"/>
+<span style="position:absolute;top:-14px;">comment</span><input type="text" name="comment">
+</div>
+</form>
+
+<form action="/site/snapshot/unignore" method="POST" target="view">
+<div>
+<input type="submit" value="unignore" />
+<span style="position:absolute;top:-14px;">domainName</span><input type="text" id="domainName" name="domainName" value="addictinggames.com"/>
+<span style="position:absolute;top:-14px;">policyName</span><input type="text" id="policyName" name="policyName" value="Privacy Policy"/>
+<span style="position:absolute;top:-14px;">snapshotVersion</span><input type="text" id="snapshotVersion" name="snapshotVersion" value="1336998464"/>
+</div>
+</form>
+
+<h3>COMMENTS</h3>
+<form action="/site/snapshot/comment" method="POST" target="view">
+<div>
+<input type="submit" value="comment" />
+<span style="position:absolute;top:-14px;">domainName</span><input type="text" id="domainName" name="domainName" value="addictinggames.com"/>
+<span style="position:absolute;top:-14px;">policyName</span><input type="text" id="policyName" name="policyName" value="Privacy Policy"/>
+<span style="position:absolute;top:-14px;">snapshotVersion</span><input type="text" id="snapshotVersion" name="snapshotVersion" value="1336998464"/>
+<span style="position:absolute;top:-14px;">comment</span><input type="text" name="comment">
+</div>
+</form>
+
+<form action="/site/snapshot/uncomment" method="POST" target="view">
+<div>
+<input type="submit" value="remove comment" />
+<span style="position:absolute;top:-14px;">domainName</span><input type="text" id="domainName" name="domainName" value="addictinggames.com"/>
+<span style="position:absolute;top:-14px;">policyName</span><input type="text" id="policyName" name="policyName" value="Privacy Policy"/>
+<span style="position:absolute;top:-14px;">snapshotVersion</span><input type="text" id="snapshotVersion" name="snapshotVersion" value="1336998464"/>
+</div>
+</form>
+
+
+
+
+<h3>BEGIN</h3>
+<form action="/site/snapshot/begin" method="POST" target="view">
+<div>
+<input type="submit" value="set as new beginning" />
+<span style="position:absolute;top:-14px;">domainName</span><input type="text" id="domainName" name="domainName" value="addictinggames.com"/>
+<span style="position:absolute;top:-14px;">policyName</span><input type="text" id="policyName" name="policyName" value="Privacy Policy"/>
+<span style="position:absolute;top:-14px;">snapshotVersion</span><input type="text" id="snapshotVersion" name="snapshotVersion" value="1336998464"/>
+<span style="position:absolute;top:-14px;">comment</span><input type="text" name="comment">
+</div>
+</form>
+
+<form action="/site/snapshot/unbegin" method="POST" target="view">
+<div>
+<input type="submit" value="remove new beginning" />
+<span style="position:absolute;top:-14px;">domainName</span><input type="text" id="domainName" name="domainName" value="addictinggames.com"/>
+<span style="position:absolute;top:-14px;">policyName</span><input type="text" id="policyName" name="policyName" value="Privacy Policy"/>
+<span style="position:absolute;top:-14px;">snapshotVersion</span><input type="text" id="snapshotVersion" name="snapshotVersion" value="1336998464"/>
+</div>
+</form>
+
+
+

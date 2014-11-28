@@ -1,0 +1,50 @@
+
+// Change the settings in this file and save it as settings.js
+
+
+
+// REQUIREMENTS
+// ---------------------------------------------------------------------------------------------------
+var mongoose = require('mongoose');
+var U = require('./utilities');
+
+
+// SETTINGS
+// ---------------------------------------------------------------------------------------------------
+var DEBUG = true;
+var DATABASE_HOST = “HOST_NAME_OF_YOUR_DB”;
+var DATABASE = “NAME_YOUR_DATABASE”;
+var SERVER_PORT = PORT_NUMBER;
+var SSL_CERT = “CERT_FILE_NAME”;
+var SSL_KEY = “KEY_FILE_NAME”;
+var SSL_PASSPHRASE = “PASSPHRASE”;
+var JWT_SECRET = “SECRET_FOR_JWT“;
+
+
+var tosback2_data_path = ‘PATH_TO_TOSBACK2/';
+var rules_path = tosback2_data_path+"rules/";
+var audit_live_base_path = ‘PATH_TO_LIVE_AUDIT/‘;
+var audit_staging_base_path = 'PATH_TO_STAGING_AUDIT/';
+
+
+// INITIALIZATIONS
+// ---------------------------------------------------------------------------------------------------
+// using only one database, so opting for mongoose connect rather than createConnection.
+mongoose.connect('mongodb://'+DATABASE_HOST+'/'+DATABASE);
+U.setDebug(DEBUG);
+
+
+// EXPORTS
+// ---------------------------------------------------------------------------------------------------
+exports.DATABASE_HOST = DATABASE_HOST;
+exports.DATABASE = DATABASE;
+exports.SERVER_PORT = SERVER_PORT;
+exports.SSL_CERT = SSL_CERT;
+exports.SSL_KEY = SSL_KEY;
+exports.SSL_PASSPHRASE = SSL_PASSPHRASE;
+exports.JWT_SECRET = JWT_SECRET;
+exports.rules_path = rules_path;
+exports.audit_live_base_path = audit_live_base_path;
+exports.audit_staging_base_path = audit_staging_base_path;
+exports.U = U;
+

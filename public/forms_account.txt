@@ -1,0 +1,99 @@
+
+<form action="/account/create" method="POST" target="view">
+<div>
+<h2>CREATE</h2>
+    Full Name: <input name="fullname" value="Asa Hardcastle">
+    E-mail Address: <input name="email" value="asa@asahardcastle.com">
+    Password: <input name="password" value="">
+    <input type=submit value="create" class="button">
+</div>
+</form>
+
+<form action="/account/login" method="POST" target="view">
+<div>
+<h2>LOGIN</h2>
+    E-mail Address: <input name="email" value="asa@asahardcastle.com">
+    Password: <input name="password" value="">
+    <input type=submit value="login" class="button">
+</div>
+</form>
+
+<form action="/account/status" method="POST" target="view">
+<div>
+<h2>STATUS</h2>
+    <input type=submit value="status" class="button">
+</div>
+</form>
+
+
+<form action="/account/logout" method="POST" target="view">
+<div>
+<h2>LOGOUT</h2>
+    <input type=submit value="logout" class="button">
+</div>
+</form>
+
+
+<form action="/account/delete" method="POST" target="view">
+<div>
+<h2>DELETE ACCOUNT</h2>
+    <input type=submit value=delete>
+</div>
+</form>
+
+
+<form action="/account/pass" method="POST" target="view">
+<div>
+<h2>SET PASSWORD</h2>
+    E-mail Address: <input name="email" value="asa@asahardcastle.com">
+    Password: <input name="password" value="">
+    <input type=submit value="set" class="button">
+</div>
+</form>
+
+
+
+<form action="/account/update" method="POST" target="view">
+<div>
+<h2>UPDATE ACCOUNT</h2>
+    Account ID: <input name="accountId">
+    Email: <input name="email">
+    Name: <input name="fullname">
+    <input type=submit value="update">
+</div>
+</form>
+</div>
+
+
+<h1>Account Admin</h1>
+
+
+<form action="/account/activate" method="POST" target="view">
+<div>
+<h2>ACTIVATE ACCOUNT</h2>
+    Account ID: <input name="accountToActivateId" value="">
+    <input type=submit value=activate>
+</div>
+</form>
+
+<form action="/account/deactivate" method="POST" target="view">
+<div>
+<h2>DE-ACTIVATE ACCOUNT</h2>
+    Account ID: <input name="accountToDeactivateId" value="">
+    <input type=submit value=deactivate>
+</div>
+</form>
+
+
+<form action="/account/find" method="POST" target="view">
+<div>
+<h2>FIND ACCOUNT</h2>
+    E-Mail Address: <input name="email" value="asa@asahardcastle.com">
+    Account ID: <input name="accountId" value="">
+    <input type=submit value=find>
+</div>
+</form>
+
+
+
+

@@ -1,0 +1,17 @@
+
+
+
+<form action="/domain/suggest" method="POST">
+
+<label for="fullname">Your Name (optional)</label>
+<input type="text" id="fullname" name="fullname"/>
+
+<label for="email">Your E-Mail (optional)</label>
+<input type="text" id="email" name="email"/>
+
+<label for="tos">URL To the TOS or Policy:</label>
+<input type="text" id="tos" name="tos"/>
+
+<input type="submit" value="submit" />
+
+</form>
